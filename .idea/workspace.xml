@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="" />
+    <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_libro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/mauri/OneDrive/Documentos/Curso Django/clase-03",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -114,7 +125,7 @@
       <workItem from="1770647439572" duration="84000" />
       <workItem from="1770685636167" duration="3453000" />
       <workItem from="1770740481118" duration="18000" />
-      <workItem from="1770767291399" duration="239000" />
+      <workItem from="1770767291399" duration="2312000" />
     </task>
     <servers />
   </component>
