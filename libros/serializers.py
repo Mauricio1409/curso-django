@@ -1,15 +1,10 @@
 from rest_framework import serializers
-from .models import Libro, Autor
+from .models import Libro
+from users.serializers import UserSerializer
 
-
-class AutorSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Autor
-        fields = ('id', 'nombre', 'fecha_nacimiento')
-        read_only_fields = ('id',)
 
 class LibroDetailSerializer(serializers.ModelSerializer):
-    autor = AutorSerializer(read_only=True)
+    autor = UserSerializer(read_only=True)
 
     class Meta:
         model = Libro
@@ -20,7 +15,7 @@ class LibroSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Libro
-        fields = ('id', 'titulo', 'autor', 'fecha_publicacion', 'paginas')
+        fields = ('id', 'titulo', 'fecha_publicacion', 'paginas')
         read_only_fields = ('id','fecha_publicacion')
 
     def validate_paginas(self, value):

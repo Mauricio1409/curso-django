@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_libro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_libro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/migrations/0002_autor_alter_libro_options_alter_libro_paginas_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/urls.py" afterDir="false" />
@@ -39,23 +43,27 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="39PBMoAbNzQ5Pqi9P7KRVAjwAMk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mauri/OneDrive/Documentos/Curso Django/clase-03",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mauri/OneDrive/Documentos/Curso Django/clase-03&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Django Server.clase-03">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="clase-03" />
@@ -125,9 +133,24 @@
       <workItem from="1770647439572" duration="84000" />
       <workItem from="1770685636167" duration="3453000" />
       <workItem from="1770740481118" duration="18000" />
-      <workItem from="1770767291399" duration="2312000" />
+      <workItem from="1770767291399" duration="4636000" />
+      <workItem from="1770815683535" duration="42000" />
+      <workItem from="1770852656628" duration="4699000" />
+      <workItem from="1770915217516" duration="35000" />
+      <workItem from="1770948732040" duration="2455000" />
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
