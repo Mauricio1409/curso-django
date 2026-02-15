@@ -18,7 +18,7 @@ class UserManager(BaseUserManager):
 
     def create_superuser(self, email, password, **extra_fields):
         extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_admin', True)
+        extra_fields.setdefault('is_superuser', True)
 
         return self.create_user(email, password, **extra_fields)
 
@@ -31,6 +31,7 @@ class CustomUser(AbstractUser, PermissionsMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
+    username = None  # Eliminamos el campo username heredado
     is_active = models.BooleanField(default=True)
     role = models.CharField(max_length=20, choices=UserRole.choices, default=UserRole.USER)
 

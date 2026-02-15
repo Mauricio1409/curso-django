@@ -11,31 +11,38 @@ from .permissions import IsOwnerOrReadOnly
 from .serializers import LibroSerializer, LibroDetailSerializer
 from .models import Libro
 from .service import LibroService
+import logging
 
+logger = logging.getLogger(__name__)
 
 class LibroView(ViewSet):
-    permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
+    permission_classes = [IsAuthenticated]
     authentication_classes = [JWTAuthentication]
 
     service = LibroService()
 
     def list(self, request):
+        logger.info(f" /api/libros/ - GET - User: {request.user.username} - Query Params: {request.query_params}")
         libros = self.service.get_all_libros(request)
         return Response(libros, status=status.HTTP_200_OK)
 
     def retrieve(self, request, pk):
+        logger.info(f" /api/libros/{pk}/ - GET - User: {request.user.username}")
         libro = self.service.get_libro_by_id(pk)
         return Response(libro, status=status.HTTP_200_OK)
 
     def create(self, request):
+        logger.info(f" /api/libros/ - POST - User: {request.user.username} - Data: {request.data}")
         libro = self.service.create_libro(request.data,request.user)
         return Response(libro, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk=None):
+        logger.info(f" /api/libros/{pk}/ - PUT - User: {request.user.username} - Data: {request.data}")
         libro = self.service.update_libro(pk, request.data, request.user)
         return Response(libro, status=status.HTTP_200_OK)
 
     def destroy(self, request, pk=None):
+        logger.info(f" /api/libros/{pk}/ - DELETE - User: {request.user.username}")
         self.service.delete_libro(pk, request.user)
         return Response(status=status.HTTP_204_NO_CONTENT)
 

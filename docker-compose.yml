@@ -1,0 +1,49 @@
+services:
+  db:
+    image: postgres
+    container_name: library_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    restart:
+        unless-stopped
+
+    volumes:
+      - db_data:/var/lib/postgresql
+    networks:
+        - library_network
+
+
+  web:
+    build: .
+    container_name: api_library
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    restart:
+        unless-stopped
+
+    command: ["gunicorn", "api_libro.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
+    networks:
+        - library_network
+
+volumes:
+  db_data:
+
+networks:
+  library_network:
+    driver: bridge
