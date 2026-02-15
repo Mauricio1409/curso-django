@@ -7,6 +7,8 @@
     <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_libro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +134,9 @@
       <workItem from="1770915217516" duration="35000" />
       <workItem from="1770948732040" duration="2455000" />
       <workItem from="1770989898099" duration="327000" />
-      <workItem from="1771123744527" duration="1722000" />
+      <workItem from="1771123744527" duration="2594000" />
+      <workItem from="1771169289697" duration="2485000" />
+      <workItem from="1771171899875" duration="2259000" />
     </task>
     <servers />
   </component>

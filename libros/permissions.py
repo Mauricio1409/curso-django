@@ -6,14 +6,7 @@ class IsOwnerOrReadOnly(BasePermission):
         if request.method in SAFE_METHODS:
             return True
 
-        if request.method == "POST":
+        if request.method in ("POST", "PUT", "DELETE"):
             return request.user.is_authenticated and request.user.role == 'autor'
 
         return request.user.is_authenticated and request.user
-
-    def has_object_permission(self, request, view, obj):
-        if request.method in SAFE_METHODS:
-            return True
-
-        return obj.autor == request.user
-
