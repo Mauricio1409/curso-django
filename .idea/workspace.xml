@@ -7,13 +7,6 @@
     <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_libro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_libro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/0002_autor_alter_libro_options_alter_libro_paginas_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +131,8 @@
       <workItem from="1770852656628" duration="4699000" />
       <workItem from="1770915217516" duration="35000" />
       <workItem from="1770948732040" duration="2455000" />
+      <workItem from="1770989898099" duration="327000" />
+      <workItem from="1771123744527" duration="1722000" />
     </task>
     <servers />
   </component>

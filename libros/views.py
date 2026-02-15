@@ -1,11 +1,14 @@
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
+from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, ViewSet
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
+from api_libro.pagination import CustomPagination
 from .permissions import IsOwnerOrReadOnly
 from .serializers import LibroSerializer, LibroDetailSerializer
 from .models import Libro
@@ -13,6 +16,11 @@ from .models import Libro
 class LibroViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
     authentication_classes = [JWTAuthentication]
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    pagination_class = CustomPagination
+    filterset_fields = ['titulo']
+    search_fields = ['titulo']
+    ordering_fields = ['titulo']
 
     def get_queryset(self):
         return Libro.objects.all()
@@ -109,6 +117,4 @@ class LibroViewSet(ModelViewSet):
 #     def get_cantidad_autores(self, request):
 #         cantidad = Autor.objects.count()
 #         return Response({'cantidad': cantidad}, status=status.HTTP_200_OK)
-
-
 
