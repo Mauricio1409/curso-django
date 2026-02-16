@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ada4fbd-1463-44d8-a87a-1b855be039f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_libro/exception_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/exception_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_libro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_libro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/0002_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libros/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libros/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libros/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +135,8 @@
       <workItem from="1771123744527" duration="2594000" />
       <workItem from="1771169289697" duration="2485000" />
       <workItem from="1771171899875" duration="2414000" />
-      <workItem from="1771174703002" duration="7039000" />
+      <workItem from="1771174703002" duration="7310000" />
+      <workItem from="1771184316762" duration="1544000" />
     </task>
     <servers />
   </component>

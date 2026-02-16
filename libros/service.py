@@ -54,9 +54,7 @@ class LibroService:
             raise NoTenesPermisosSobreEsteLibroError(f"Solo los usuarios con rol 'autor' pueden crear libros")
 
         serialzier = LibroSerializer(data=data)
-        if not serialzier.is_valid():
-            logger.warning(f" Los datos proporcionados invalidos: {serialzier.errors}")
-            raise DatosInvalidosError(f"Los datos proporcionados para la creacion del libro son inválidos: {serialzier.errors}")
+        serialzier.is_valid(raise_exception=True)
 
 
         libro = self.repository.create(**serialzier.validated_data, autor=user)
